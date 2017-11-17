@@ -1,0 +1,262 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#title_field {
+	font-size: 35px;
+	text-align: center;
+	margin: 30px auto;
+}
+
+#puzzle_field {
+	position: absolute;
+	height: 320px;
+	width: 320px;
+	left: 50%;
+	margin-left: -160px;
+	margin-top: 50px;
+	font-size: 0;
+}
+
+#restart_field {
+	position: absolute;
+	left:50%;
+	margin-left: -50px;
+	margin-top: 450px;
+	text-align: center;
+	box-shadow: 2px 2px 1px 1px grey; 
+	border: none;
+	width: 100px;
+	height: 30px;
+	color: white;
+	background-color: #0080FF;
+	font-size: 15px;
+	transition: all 0.15s;
+}
+
+#restart_field:hover {
+	position: absolute;
+	left:50%;
+	margin-left: -52.5px;
+	margin-top: 448px;
+	text-align: center;
+	box-shadow: 3px 3px 1px 1px grey;
+	border: none;
+	width: 105px;
+	height: 33px;
+	color: white;
+	background-color: #0080FF;
+	font-size: 17px;
+}
+
+.blocks {
+	display: inline-block;
+	width: 78px;
+	height: 78px;
+	border: 1px solid grey;
+	background: url("../image/puzzle0.jpg") no-repeat;
+	background-size: 320px 320px;
+	transition: all 0.25s ease-out;
+}
+
+.blocks:hover {
+	display: inline-block;
+	transform: scale(1.06,1.06);
+	border: 1px solid grey;
+	z-index: 1;
+}
+
+.puzzle_0 {
+	background-position: 0px 0px;
+	transition: all 0.25s;
+}
+
+.position_0 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_1 {
+	background-position: -80px 0px;
+	transition: all 0.25s;
+}
+
+.position_1 {
+	position: absolute;
+	left: 80px;
+	top: 0px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_2 {
+	background-position: -160px 0px;
+	transition: all 0.25s;
+}
+
+.position_2{
+	position: absolute;
+	left: 160px;
+	top: 0px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_3 {
+	background-position: -240px 0px;
+	transition: all 0.25s;
+}
+
+.position_3{
+	position: absolute;
+	left: 240px;
+	top: 0px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_4 {
+	background-position: 0px -80px;
+	transition: all 0.25s;
+}
+
+.position_4{
+	position: absolute;
+	left: 0px;
+	top: 80px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_5 {
+	background-position: -80px -80px;
+	transition: all 0.25s;
+}
+
+.position_5{
+	position: absolute;
+	left: 80px;
+	top: 80px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_6 {
+	background-position: -160px -80px;
+	transition: all 0.25s;
+}
+
+.position_6{
+	position: absolute;
+	left: 160px;
+	top: 80px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_7 {
+	background-position: -240px -80px;
+	transition: all 0.25s;
+}
+
+.position_7{
+	position: absolute;
+	left: 240px;
+	top: 80px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_8 {
+	background-position: 0px -160px;
+	transition: all 0.25s;
+}
+
+.position_8{
+	position: absolute;
+	left: 0px;
+	top: 160px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_9 {
+	background-position: -80px -160px;
+	transition: all 0.25s;
+}
+
+.position_9{
+	position: absolute;
+	left: 80px;
+	top: 160px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_10 {
+	background-position: -160px -160px;
+	transition: all 0.25s;
+}
+
+.position_10{
+	position: absolute;
+	left: 160px;
+	top: 160px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_11 {
+	background-position: -240px -160px;
+	transition: all 0.25s;
+}
+
+.position_11{
+	position: absolute;
+	left: 240px;
+	top: 160px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_12 {
+	background-position: 0px -240px;
+	transition: all 0.25s;
+}
+
+.position_12{
+	position: absolute;
+	left: 0px;
+	top: 240px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_13 {
+	background-position: -80px -240px;
+	transition: all 0.25s;
+}
+
+.position_13{
+	position: absolute;
+	left: 80px;
+	top: 240px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_14 {
+	background-position: -160px -240px;
+	transition: all 0.25s;
+}
+
+.position_14{
+	position: absolute;
+	left: 160px;
+	top: 240px;
+	transition: all 0.15s ease-out;
+}
+
+.puzzle_15 {
+	transition: all 0.25s;
+	opacity: 0;
+	border: 1px solid white;
+}
+
+.position_15{
+	position: absolute;
+	left: 240px;
+	top: 240px;
+	transition: all 0.15s ease-out;
+}
+
