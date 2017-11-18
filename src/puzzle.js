@@ -75,7 +75,7 @@ $(document).ready(function(){
 	});
 
 	$(".blocks").click(function(event){
-		if(is_adjacent($(event.target).offset(), $(".puzzle_15").offset())) {
+		if(initial && is_adjacent($(event.target).offset(), $(".puzzle_15").offset())) {
 			var class_of_click_block = ("" + $(event.target).attr("class")).split(" ");
 			var class_of_blank_block = ("" + $(".puzzle_15").attr("class")).split(" ");
 			var temp = class_of_click_block[1];
@@ -87,6 +87,7 @@ $(document).ready(function(){
 			if (is_over() && initial)
 			{
 				initial = false;
+				alert("You win!");
 				img_index = (img_index + 1) % 4;
 				$(".blocks").css("background-image", "url(../image/puzzle" + img_index +".jpg)");
 			}
